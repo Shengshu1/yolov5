@@ -189,8 +189,8 @@ def run(
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default=r'C:\Users\13651\Desktop\yolov5-7.0\runs\train\exp4\weights\last.pt', help='model path or triton URL')
-    parser.add_argument('--source', type=str, default=r'C:\Users\13651\Desktop\yolov5-7.0\data\datasets\test\images', help='file/dir/URL/glob/screen/0(webcam)')
-    parser.add_argument('--data', type=str, default=r'C:\Users\13651\Desktop\yolov5-7.0\data\mydata.yaml', help='(optional) dataset.yaml path')
+    parser.add_argument('--source', type=str, default='/root/yolov5/data/datasets/test', help='file/dir/URL/glob/screen/0(webcam)')
+    parser.add_argument('--data', type=str, default='/root/yolov5/data/mydata.yaml', help='(optional) dataset.yaml path')
     parser.add_argument('--imgsz', '--img', '--img-size', nargs='+', type=int, default=[640], help='inference size h,w')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.45, help='NMS IoU threshold')
